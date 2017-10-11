@@ -1,0 +1,12 @@
+{
+    "plugins": [
+        "esformatter-braces",
+        "esformatter-var-each",
+        "esformatter-quotes",
+        "esformatter-collapse-objects"
+    ],
+    "indent": {
+      "SwitchCase": 1,
+      "SwitchStatement": 0
+    }
+}

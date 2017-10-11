@@ -1,0 +1,27 @@
+{
+  "name": "chrome-devtools",
+  "version": "1.0.0",
+  "description": "Chrome Devtools learning note",
+  "main": "index.js",
+  "scripts": {
+    "start": "anywhere --port 12306"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jiasm/Use-chrome-devtools-effectively.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jiasm/Use-chrome-devtools-effectively/issues"
+  },
+  "homepage": "https://github.com/Jiasm/Use-chrome-devtools-effectively#readme",
+  "devDependencies": {
+    "eslint": "^4.8.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.2.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}

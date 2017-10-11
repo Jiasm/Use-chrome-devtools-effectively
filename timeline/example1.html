@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>timeline-example1</title>
+</head>
+
+<body>
+  <h1>test title</h1>
+  <script async="async" type="text/javascript" src="./js/example1.js"></script>
+  <script async="async" type="text/javascript" src="./js/example2.js"></script>
+  <script type="text/javascript">
+    (() => {
+      let now = new Date().valueOf()
+      let flag = true
+      while (flag) flag = new Date().valueOf() - now < 2000
+      console.log('delay')
+    })()
+  </script>
+  <!-- <script defer="defer" type="text/javascript" src="./js/example1.js"></script>
+  <script defer="defer" type="text/javascript" src="./js/example2.js"></script> -->
+  <script type="text/javascript">
+    console.log('normal')
+  </script>
+  <p>test text</p>
+</body>
+
+</html>
