@@ -8,22 +8,21 @@
 
 <body>
   <h1>test title</h1>
+  <script type="text/javascript">
+    window.addEventListener('DOMContentLoaded', () => {
+      console.log('DOMContentLoaded before script tag')
+    })
+  </script>
   <script async="async" type="text/javascript" src="./js/example1.js"></script>
   <script async="async" type="text/javascript" src="./js/example2.js"></script>
-  <script type="text/javascript">
-    (() => {
-      let now = new Date().valueOf()
-      let flag = true
-      while (flag) flag = new Date().valueOf() - now < 2000
-      console.log('delay')
-    })()
-  </script>
-  <!-- <script defer="defer" type="text/javascript" src="./js/example1.js"></script>
-  <script defer="defer" type="text/javascript" src="./js/example2.js"></script> -->
-  <script type="text/javascript">
-    console.log('normal')
-  </script>
+  <script defer="defer" type="text/javascript" src="./js/example1.js"></script>
+  <script defer="defer" type="text/javascript" src="./js/example2.js"></script>
   <p>test text</p>
+  <script type="text/javascript">
+    window.addEventListener('DOMContentLoaded', () => {
+      console.log('DOMContentLoaded after script tag')
+    })
+  </script>
 </body>
 
 </html>

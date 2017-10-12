@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>example1</title>
+  <style media="screen">
+    /* 经测试 float的话是7s左右，用flex的话是4.5s左右 */
+
+    .wrap {
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      width: 50px;
+      height: 50px;
+      border: 1px solid gray;
+
+      /*float: left;*/
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <script type="text/javascript">
+      document.write('<div class="box box--expanded">item</div>'.repeat(500000))
+    </script>
+  </div>
+</body>
+
+</html>
